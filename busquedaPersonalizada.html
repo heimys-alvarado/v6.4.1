@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RicaComida.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="jqm4/jquery.mobile.structure-1.4.4.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="themes/tema-rica-comida-v1.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+<script src="jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="jqm4/jquery.mobile-1.4.4.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div data-role="page" id="page" data-theme="a">
+<div data-role="header" data-position="fixed" data-theme="b">
+  <div id="tabla">
+      <div id="fila">
+        <div id="celda15" >
+            <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+        </div>
+        <div id="celda70" >
+        <img src="img/titulo.png" alt="titulo" /> </div>
+        <div id="celda15">
+           <a href="#derecho" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all">No text</a>
+        </div>
+      </div>
+  </div>
+  </div> 
+
+  
+  <div data-role="content" data-theme="a">
+  <form id="form1" name="form1" method="post" action="">
+    <div class="contenido-blanco">
+    <h1>Personalizar Platos    </h1>
+    
+      <select name="selectmenu" id="selectmenu">
+        <option value="option1" selected="selected">Tipo de Comida</option>
+        <option value="option2">Italiana</option>
+        <option value="option3">Venezolana</option>
+        <option value="option4">Japonesa</option>
+        <option value="option5">Ligera</option>
+        <option value="option6">Vegetariana</option>
+        <option value="option7">Otros</option>
+      </select>
+      <select name="selectmenu2" id="selectmenu2">
+        <option value="option1" selected="selected">Prote&iacute;na</option>
+        <option value="option2">Carne</option>
+        <option value="option3">Pollo</option>
+        <option value="option2">Pescado</option>
+        <option value="option3">Legumbres</option>        
+        <option value="option3">Otros</option>
+      </select>
+       <select name="selectmenu3" id="selectmenu3">
+          <option value="option1" selected="selected">Contorno</option>
+          <option value="option2">Arroz</option>
+          <option value="option3">Pasta</option>
+          <option value="option4">Ensalada</option>
+          <option value="option5">Arepas</option>
+          <option value="option6">Vegetales</option>
+          <option value="option7">Otros</option>
+        </select>
+     
+        <select name="selectmenu4" id="selectmenu4">
+          <option value="option1" selected="selected">Tipo de Bebida</option>
+          <option value="option2">Agua</option>
+          <option value="option3">Jugo</option>
+          <option value="option4">Lacteos</option>
+          <option value="option5">Refrescos</option>
+          <option value="option6">Licor</option>
+          <option value="option7">Otros</option>
+        </select>
+     
+        <select name="selectmenu5" id="selectmenu5">
+          <option value="option1" selected="selected">Bebidas</option>
+          <option value="option2">Agua</option>
+          <option value="option3">Jugo Naranja</option>
+          <option value="option4">Refresco Colita</option>
+          <option value="option5">Leche</option>
+          <option value="option6">Cerveza</option>
+          <option value="option7">Otros</option>
+        </select>
+       <div data-inline="true" align="center">
+          <a href="#" data-role="button" data-inline="true">    +    </a>
+          <a href="#" data-role="button" data-inline="true">    -    </a>
+      </div>
+      
+      
+      <h4>Ingredientes        </h4>
+        <fieldset data-role="controlgroup">
+          <input type="checkbox" name="checkbox1" id="checkbox1_0" class="custom" value="" />
+          <label for="checkbox1_0">Prote&iacute;na 1</label>
+          <input type="checkbox" name="checkbox1" id="checkbox1_1" class="custom" value="" />
+          <label for="checkbox1_1">Contorno 1</label>
+          <input type="checkbox" name="checkbox1" id="checkbox1_2" class="custom" value="" />
+          <label for="checkbox1_2">Bebida 1</label>
+        </fieldset>
+      <div data-inline="true" align="center">
+      <a href="restaurant.html" data-role="button" data-inline="true" data-theme="b">&nbsp;&nbsp;Atr&aacute;s&nbsp;&nbsp;</a>
+      <a href="resultadoBusquedaPlato.html" data-role="button" data-inline="true" data-theme="b">Buscar</a>
+      </div>
+    </div> 
+    
+ </form>
+  </div>
+  <div data-role="footer" data-theme="b">
+    <h4>© 2015 Comida Rica</h4>
+  </div>
+  
+  <div data-role="panel" id="bars" data-theme="a">
+  <ul class="menu" data-role="listview">
+    <img src="img/titulo.png" />
+    <li data-icon="delete"><a href="#" data-rel="close">Cerrar Men&uacute;</a></li>
+    <li><a href="restaurant.html">Restaurantes</a></li>
+    <li><a href="comida.html">Comida</a></li>
+    <li><a href="preferidos.html">Preferidos</a></li>
+    <li><a href="rastreoPedido.html">Rastreo de Pedido</a></li>
+    <li><a href="creaTuPlato.html">Crea tu plato</a></li>
+    <li><a href="recomendado1.html">Top Recomendado</a></li>
+    <li><a href="recomendado2.html">Top Recomendado</a></li>
+  </ul>
+  </div><!-- /panel -->
+  
+  
+  <div data-role="panel" id="derecho" data-theme="a" data-position="right">
+  <ul class="menu" data-role="listview">
+    <img src="img/titulo.png" />
+    <li data-icon="delete"><a href="#" data-rel="close">Cerrar Men&uacute;</a></li>
+    <li><a href="configuracion.html">Configuraci&oacute;n</a></li>
+    <li><a href="modificacionPerfil.html">Modificaci&oacute;n de Perfil</a></li>
+    <li><a href="index.html">Cerrar Sesi&oacute;n</a></li>
+  </ul>
+  </div><!-- /panel -->
+  
+</div>
+</body>
+</html>
